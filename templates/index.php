@@ -82,7 +82,7 @@
               <div class="w3-container w3-black">
                 <h2 style="color:white;">Malaria Analysis</h2>
               </div>
-              <form class="w3-container" action="{{ url_for('predict')}}"method="post">
+              <form id="upload-file" method="post" enctype="multipart/form-data">
                 <br>
                <label for="imageUpload" class="upload-label">
             Select Image
