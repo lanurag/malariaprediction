@@ -68,9 +68,9 @@ def upload():
         str2 = 'Normal'
        
         if result[0][0] == 0:
-          return str2
+          return str1
         else:
-         return str1
+         return str2
     return None
 
     #this section is used by gunicorn to serve the app on Heroku
