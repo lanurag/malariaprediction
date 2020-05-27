@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
        <link rel="stylesheet" href="{{ url_for('static', filename='css/open-iconic-bootstrap.min.css') }}" >
     <link rel="stylesheet"  href="{{ url_for('static', filename='css/animate.css') }}">
+	  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
     
     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" >
     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}" >
@@ -73,7 +74,7 @@
       </div>
     </div>
 
-   <section class="ftco-section contact-section ftco-degree-bg" style="height: 100px">
+   <section class="ftco-section contact-section ftco-degree-bg" style="height: 1000px">
    
       <div class="container col-lg-6" >
           
