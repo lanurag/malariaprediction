@@ -39,7 +39,7 @@ print('Model loaded. Start serving...')
 @app.route('/', methods=['GET'])
 def index():
     # Main page
-    return render_template('index.html')
+    return render_template('index.php')
 
 
 @app.route('/predict', methods=['GET', 'POST'])
@@ -68,7 +68,7 @@ def upload():
         str2 = 'Normal'
        
         if result[0][0] == 0:
-          return str1
+          return str2
         else:
          return str1
     return None
