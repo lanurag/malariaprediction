@@ -73,15 +73,15 @@
       </div>
     </div>
 
-   <section class="ftco-section contact-section ftco-degree-bg" style="height: 1500px">
+   <section class="ftco-section contact-section ftco-degree-bg" style="height: 100px">
    
       <div class="container col-lg-6" >
           
           
-            <div class="w3-card-4" style="width: 550px;">
+            <div class="w3-card-4" style="width: 900px;">
               <div class="w3-container w3-black">
                 <h2 style="color:white;">Malaria Analysis</h2>
-              </div>
+              </div>1
               <form id="upload-file" method="post" enctype="multipart/form-data">
                 <br>
                <label for="imageUpload" class="upload-label">
