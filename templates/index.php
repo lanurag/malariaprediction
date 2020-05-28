@@ -85,7 +85,7 @@
           
            <div class="w3-card-4" style="width: 700px; height:500px; padding:20px">
               <div class="w3-container w3-black">
-                <h2 style="color:white;">Diabetic Reinopathy Analysis</h2>
+                <h2 style="color:white;">Malaria Analysis</h2>
               </div>
               <form id="upload-file" method="post" enctype="multipart/form-data" style=
 		    "text-align: center;">
