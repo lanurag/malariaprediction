@@ -4,20 +4,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Premedic-Malaria Analysis</title>
+    <title>Premedic-Liver Diseases Analysis</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	   <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
        <link rel="stylesheet" href="{{ url_for('static', filename='css/open-iconic-bootstrap.min.css') }}" >
     <link rel="stylesheet"  href="{{ url_for('static', filename='css/animate.css') }}">
-	  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
     
     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" >
     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}" >
@@ -66,53 +61,71 @@
   </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('{{ url_for('static', filename='images/malaria.jpg') }}'); background-attachment:fixed;">
+    <div class="hero-wrap" style="background-image: url('{{ url_for('static', filename='images/liver.png') }}'); background-attachment:fixed;">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-8 ftco-animate text-center">
             <p class="breadcrumbs"><span class="mr-2"><a href="http://premediccare.rf.gd/index.php">Home</a></span></p>
-            <h3 class="mb-3 bread">Malaria-Department</h3>
+            <h3 class="mb-3 bread">Liver-Department</h3>
           </div>
         </div>
       </div>
     </div>
 
-   <section class="ftco-section contact-section ftco-degree-bg" style="height: 800px">
+   <section class="ftco-section contact-section ftco-degree-bg" style="height: 1800px">
    
       <div class="container col-lg-6" >
           
           
-            <div class="w3-card-4" style="width: 700px; height: 500px; margin: 0 auto;">
+            <div class="w3-card-4" style="width: 550px;">
               <div class="w3-container w3-black">
-                <h2 style="color:white;">Malaria Analysis</h2>
+                <h2 style="color:white;">Liver Disease Analysis</h2>
               </div>
-              <form id="upload-file" method="post" enctype="multipart/form-data">
+              <form class="w3-container" action="{{ url_for('predict')}}"method="post">
                 <br>
-               <label for="imageUpload" class="upload-label">
-            Select Image
-        </label>
-        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                <p>      
+                <label class="w3-text-black"><b>Age</b></label>
+                <input class="w3-input w3-border w3-sand" name="first" type="text" required="required">     </p>
+                <p>
+                <label class="w3-text-black"><b>Gender</b></label>
+                <select class="w3-select w3-border w3-sand" name="sex" required="required" >
+                <option value="" disabled selected>Select Option</option>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+                </select>
+                </p>
+                <p>      
+                <label class="w3-text-black"><b>Total Bilrubin</b></label>
+                <input class="w3-input w3-border w3-sand" name="restg" type="text" required="required"></p>
+                <p>      
+                <label class="w3-text-black"><b>Direct Bilrubin</b></label>
+                <input class="w3-input w3-border w3-sand" name="exang" type="text" required="required"></p>
+                <p>      
+                <label class="w3-text-black"><b>Alkaline Phosphotase</b></label>
+                <input class="w3-input w3-border w3-sand" name="Ca" type="text" required="required"></p>
+                <p>      
+                <label class="w3-text-black"><b>Alamine Aminotransferase</b></label>
+                <input class="w3-input w3-border w3-sand" name="slope" type="text" required="required"></p>
+                <p>      
+                <label class="w3-text-black"><b>Aspartate Aminotransferase</b></label>
+                <input class="w3-input w3-border w3-sand" name="thal" type="text" required="required"></p>
+		<p>      
+                <label class="w3-text-black"><b>Total Proteins</b></label>
+                <input class="w3-input w3-border w3-sand" name="total" type="text" required="required"></p>
+		<p>      
+                <label class="w3-text-black"><b>Albumin</b></label>
+                <input class="w3-input w3-border w3-sand" name="albumin" type="text" required="required"></p>
+		<p>      
+                <label class="w3-text-black"><b>Albumin and Globulin Ratio</b></label>
+                <input class="w3-input w3-border w3-sand" name="globin" type="text" required="required"></p>
+            
+                <p>
+                <button type="submit"class="w3-btn w3-black">Analyse now</button></p>
               </form>
-			  <div class="image-section" style="display:none;">
-        <div class="img-preview">
-            <div id="imagePreview">
-            </div>
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Analyse</button>
-        </div>
-    </div>
-	 <div class="loader" style="display:none;"></div>
-
-    <h3 id="result">
-        <span> </span>
-    </h3>
-
-
             </div>
             </div>
-      
+      {{ prediction_text }}
     </section>
 		<footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(images/bg_5.jpg);">
     	<div class="overlay"></div>
@@ -189,10 +202,7 @@
   <script src={{ url_for('static', filename='js/scrollax.min.js') }}></script>
   
   <script src={{ url_for('static', filename='js/google-map.js') }}></script>
-  <script  src={{ url_for('static', filename='js/main.js') }}>
-  </script>
-   <script  src={{ url_for('static', filename='js/main1.js') }}>
-  </script>
+  <script  src={{ url_for('static', filename='js/main.js') }}></script>
     
   </body>
 </html>
