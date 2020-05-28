@@ -97,8 +97,9 @@
               </form>
 			  <div class="image-section" style="display:none;text-align: center;">
         <div class="img-preview" style=
-		    margin: auto;" >
-            <div id="imagePreview">
+		   " margin: auto;" >
+            <div id="imagePreview" style=
+		   " margin: auto;">
             </div>
         </div>
         <div style=
