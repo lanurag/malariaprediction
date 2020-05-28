@@ -83,13 +83,13 @@
       <div class="container col-lg-6" >
           
           
-            <div class="w3-card-4" style="width: 700px; height: 500px; margin: 0 auto;">
+           <div class="w3-card-4" style="width: 700px; height:500px; padding:20px">
               <div class="w3-container w3-black">
-                <h2 style="color:white;">Malaria Analysis</h2>
+                <h2 style="color:white;">Diabetic Reinopathy Analysis</h2>
               </div>
               <form id="upload-file" method="post" enctype="multipart/form-data">
                 <br>
-               <label for="imageUpload" class="upload-label">
+               <label for="imageUpload" class="upload-label" >
             Select Image
         </label>
         <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
@@ -108,7 +108,6 @@
     <h3 id="result">
         <span> </span>
     </h3>
-
 
             </div>
             </div>
