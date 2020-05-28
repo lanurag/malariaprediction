@@ -87,7 +87,8 @@
               <div class="w3-container w3-black">
                 <h2 style="color:white;">Diabetic Reinopathy Analysis</h2>
               </div>
-              <form id="upload-file" method="post" enctype="multipart/form-data">
+              <form id="upload-file" method="post" enctype="multipart/form-data" style=
+		    "text-align: center;">
                 <br>
                <label for="imageUpload" class="upload-label" >
             Select Image
