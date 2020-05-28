@@ -95,18 +95,21 @@
         </label>
         <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
               </form>
-			  <div class="image-section" style="display:none;">
-        <div class="img-preview">
+			  <div class="image-section" style="display:none;text-align: center;">
+        <div class="img-preview" >
             <div id="imagePreview">
             </div>
         </div>
-        <div>
+        <div style=
+		    "text-align: center;">
             <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Analyse</button>
         </div>
     </div>
-	 <div class="loader" style="display:none;"></div>
+	 <div class="loader" style="display:none;
+		    text-align: center;"></div>
 
-    <h3 id="result">
+    <h3 style=
+		    "text-align: center;" id="result">
         <span> </span>
     </h3>
 
