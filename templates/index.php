@@ -96,7 +96,8 @@
         <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
               </form>
 			  <div class="image-section" style="display:none;text-align: center;">
-        <div class="img-preview" >
+        <div class="img-preview" style=
+		    margin: auto;" >
             <div id="imagePreview">
             </div>
         </div>
@@ -105,8 +106,7 @@
             <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Analyse</button>
         </div>
     </div>
-	 <div class="loader" style="display:none;
-		    text-align: center;"></div>
+	 <div class="loader" style="display:none; margin: auto;"></div>
 
     <h3 style=
 		    "text-align: center;" id="result">
