@@ -37,7 +37,7 @@
   </head>
   <body>
   
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="http://premediccare.rf.gd/mainindex-user.php"><i class="flaticon-pharmacy"></i><span>Pre</span>Medic Care</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +65,6 @@
       </div>
     </div>
   </nav>
-    <!-- END nav -->
     
     <div class="hero-wrap" style="background-image: url('{{ url_for('static', filename='images/malaria.jpg') }}'); background-attachment:fixed;">
       <div class="overlay"></div>
