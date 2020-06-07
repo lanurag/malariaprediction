@@ -140,8 +140,8 @@
 
             </div>
             </div>
-	   <a href="http://premediccare.rf.gd/Malaria_rec.php?i=1" target="_top" align="right">  <button class="button button1">Green</button></a>
-       <button class="button button1">Green</button>
+	   <a href="http://premediccare.rf.gd/Malaria_rec.php?i=1" target="_top" align="right">  <button class="button button1">Recommend</button></a>
+
     </section>
 		<footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(images/bg_5.jpg);">
     	<div class="overlay"></div>
